@@ -1,0 +1,72 @@
+
+
+.inter-heading {
+  font-family: "Inter", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 36px;
+  font-style: 2.25rem;
+}
+
+.inter-heading2 {
+  font-family: "Inter", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 24px;
+  font-style: 1.5rem;
+}
+
+.inter-bodytext {
+  font-family: "Inter", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 16px;
+  font-style: 1rem;
+}
+
+body {
+	color: #030616;
+}
+
+
+
+.header {
+	width: 100%;
+	text-align: center;
+	background-color: white;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	padding: 50px;
+}
+
+h1 {
+	margin: 0%;
+}
+
+hr {
+	color: #D2D5DA;
+	width: 50%;
+	justify-content: center;
+}
+
+main {
+	width: 100%;
+	background-color: #F8FAFC;
+}
+
+.bold {
+	font-weight: bold;
+}
+
+.blue {
+	color: #4E80EE;
+}
+
+#OrderTracking, #ReturnPolicy {
+	padding: 50px 200px;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-around;
+}
+
+li {
+	margin: 15px;
+}
