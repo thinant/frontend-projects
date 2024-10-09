@@ -1,0 +1,63 @@
+.logo {
+    width: 50px;
+    height: 50px;
+}
+
+.left-arrow {
+    z-index: 1;
+}
+
+.right-arrow {
+    z-index: 1;
+}
+
+.thumbnail-photo {
+    z-index: 0;
+}
+
+button {
+    box-shadow:
+		0 1px 0 rgba(255, 255, 255, 0.25),
+		0 1px 0 rgba(255, 255, 255, 0.25) inset,
+		0 0 0 rgba(0, 0, 0, 0.5) inset,
+		0 1.10em 0 rgba(255, 255, 255, 0.25) inset,
+		0 -1.10em 1.25em rgba(0, 0, 0, 0.32) inset,
+		0 1.10rem 1.25em rgba(255, 255, 255, 0.05) inset,
+		0 1.10em 6px rgba(255, 255, 255, .1) inset;
+}
+
+.feedback {
+    vertical-align: top;
+}
+
+.feedback:before {
+    content: ' ';
+    position: absolute;
+    width: 0;
+    height: 0;
+    left: 5%;
+    top: 100%;
+    border: 12px solid;
+    border-color: rgb(156 163 175) transparent transparent rgb(156 163 175);
+  }
+
+.feedback:after {
+	content: ' ';
+    position: absolute;
+    width: 0;
+    height: 0;
+    left: 5.2%;
+    top: 100%;
+    border: 11px solid;
+    border-color: rgb(243 244 246) transparent transparent rgb(243 244 246);
+}
+
+@media(min-width:800px) {    
+    .feedback:after {
+        left: 5.1%;
+    }
+}
+
+.find-us {
+    box-shadow: none;
+}
