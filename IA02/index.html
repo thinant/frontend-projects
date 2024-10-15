@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://unpkg.com/tailwindcss@^1.0/dist/tailwind.min.css" rel="stylesheet">
+    <link href="style.css" rel="stylesheet">
+    <title>Bé tập tính</title>
+</head>
+<body class="bg-gray-300 py-24 md:py-20 md:px-48">
+    <div class="bg-white shadow-lg h-3/4">
+        <h1 class="font-bold text-5xl text-center py-8">Bé tập tính</h1>
+
+        <!--Calculate field-->
+        <div class="grid grid-rows-4 justify-center items-center my-6 mx-12 py-4 gap-4">
+            <!--Input field-->
+            <div class="input-numbers grid grid-cols-3 gap-4">
+                <label for="first-num" class="justify-self-end">Số thứ nhất: </label>
+                <input type="text" id="first-num" name="num" class="border border-2 border-black w-48 h-8 p-1 col-span-2" onfocusout="displayError('first-num')">
+            </div>
+            <div class="input-numbers grid grid-cols-3 gap-4">
+                <label for="second-num" class="justify-self-end">Số thứ hai: </label>
+                <input type="text" id="second-num" name="num" class="border border-2 border-black w-48 h-8 p-1 col-span-2" onfocusout="displayError('second-num')">
+            </div>
+            <div class="grid grid-cols-4 justify-center items-center">
+                <div>
+                    <input type="radio" id="add" name="operation" value="add">
+                    <label for="add">Cộng</label>
+                </div>
+                <div>
+                    <input type="radio" id="sub" name="operation" value="sub">
+                    <label for="sub">Trừ</label>
+                </div>
+                <div>
+                    <input type="radio" id="multiply" name="operation"value="multiply">
+                    <label for="multiply">Nhân</label>
+                </div>
+                <div>
+                    <input type="radio" id="divide" name="operation" value="divide">
+                    <label for="divide">Chia</label>
+                </div>
+            </div>
+            
+            <div class="flex flex-row justify-center">
+                <button id="submit" class="border border-2 border-black h-6 w-24" onclick="calculate()">Tính</button>
+            </div>
+
+            <!--Output field-->
+            <p class="text-red-600 italic" id="error1"></p>
+            <p class="text-red-600 italic" id="error2"></p>
+            <p class="text-red-600 italic" id="error3"></p>
+            <div class="input-numbers grid grid-rows-2 grid-cols-3 gap-4 py-4">
+                <label for="result" class="justify-self-end">Kết quả:</label>
+                <output type="text" id="result" name="result" class=" border border-2 border-black w-48 h-8 p-1 col-span-2">
+            </div>
+        </div>
+    </div>
+</body>
+<script src="script.js"></script>
+
+</html>
